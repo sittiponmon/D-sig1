@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f0e0">
+  <title>SIGNATURE</title>
+  <style>
+    * { box-sizing: border-box; }
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f6f0e0;
+    }
+    body {
+      min-height: 100vh;
+      color: #090909;
+      font-family: Arial, Tahoma, sans-serif;
+    }
+    .document {
+      width: min(100%, 720px);
+      margin: 0 auto;
+      padding: 0;
+      background: #f6f0e0;
+    }
+    .screen {
+      position: relative;
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #f6f0e0;
+      box-shadow: none;
+      line-height: 0;
+    }
+    .screen > img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+    .image-fallback {
+      display: none;
+      min-height: 300px;
+      padding: 40px 20px;
+      color: #6e5b3e;
+      background: #f6f0e0;
+      font-size: 18px;
+      line-height: 1.5;
+      text-align: center;
+    }
+    .screen.failed > img { display: none; }
+    .screen.failed > .image-fallback { display: grid; place-items: center; }
+    @media (max-width: 720px) {
+      .document { width: 100%; }
+    }
+</style>
+</head>
+<body>
+  <main class="document">
+    <!-- SIGNATURE.png -->
+    <section class="screen" aria-label="SIGNATURE.png">
+      <img
+        
+        src="https://drive.google.com/thumbnail?id=1zO7LGmALMJ65QKCPQ7s2ZTLGg6PBEG7W&sz=w2000"
+        alt="SIGNATURE.png"
+        referrerpolicy="no-referrer"
+        onerror="this.parentElement.classList.add('failed')"
+      >
+      <span class="image-fallback">รูปโหลดไม่ได้ กรุณาตรวจสอบว่าไฟล์ Google Drive ตั้งค่าเป็น “ทุกคนที่มีลิงก์”</span>
+    </section>
+
+    <!-- SIGNATURE (2).png -->
+    <section class="screen" aria-label="SIGNATURE (2).png">
+      <img
+        loading="lazy"
+        src="https://drive.google.com/thumbnail?id=1I4kwDRDEAG-jIUR6g5ntdPmrIJNiUIKP&sz=w2000"
+        alt="SIGNATURE (2).png"
+        referrerpolicy="no-referrer"
+        onerror="this.parentElement.classList.add('failed')"
+      >
+      <span class="image-fallback">รูปโหลดไม่ได้ กรุณาตรวจสอบว่าไฟล์ Google Drive ตั้งค่าเป็น “ทุกคนที่มีลิงก์”</span>
+    </section>
+  </main>
+</body>
+</html>
